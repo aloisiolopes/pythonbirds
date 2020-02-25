@@ -18,6 +18,13 @@ if __name__ == '__main__':
     print(Aloisio.idade)
     for filhos in Aloisio.filhos:
         print(filhos.nome)
+    Aloisio.sobrenome = 'Lopes'
+    del Aloisio.filhos
+    Aloisio.sobrenome
+    print(Aloisio.sobrenome)
+    print(Aloisio.__dict__)
+    print(Luiza.__dict__)
+
 
 
 
