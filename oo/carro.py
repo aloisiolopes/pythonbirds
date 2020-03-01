@@ -107,15 +107,16 @@ class Direcao:
         self.valor = NORTE
 
     #def girar_a_direita(self): #podemos usar dessa forma ou quando tiver muitos elif ou else usar em forma dct
-        if self.valor == NORTE:
-            self.valor = LESTE
-        elif self.valor == LESTE:
-            self.valor = SUL
-        elif self.valor == SUL:
-            self.valor = OESTE
+#        if self.valor == NORTE:
+#            self.valor = LESTE
+#        elif self.valor == LESTE:
+#           self.valor = SUL
+#           elif self.valor == SUL:
+#            self.valor = OESTE
 
     def girar_a_direita(self): #forma dct
         self.valor = self.rotação_a_direita_dct[self.valor]
+    def girar_a_esquerda(self):
         self.valor = self.rotação_a_esquerda_dct[self.valor]
 
 
